@@ -66,10 +66,7 @@ const MailAdd = () => {
         <dialog id={"addMailModal"} className="modal">
             <div className="modal-box md:p-12">
                 <h3 className="font-bold text-2xl mb-6">
-                    Modifier le courrier
-                    <span className={"badge badge-outline ml-3"}>
-                        Ajouter un courrier
-                    </span>
+                    Ajouter un courrier
                 </h3>
 
                 {/* Subject */}

@@ -7,9 +7,9 @@ const Mail = ({ mailId, subject, sender, receiver, sendDate, receiveDate, status
             case "delivered":
                 return ["badge-success", "Livré"]; // Green for delivered
             case "in transit":
-                return ["badge-warning", "En transit"]; // Yellow for in transit
+                return ["badge-warning", "Transit"]; // Yellow for in transit
             case "pending":
-                return ["badge-info", "En attente"]; // Blue for pending
+                return ["badge-info", "Attente"]; // Blue for pending
             case "returned":
                 return ["badge-error", "Retourné"]; // Red for returned
             default:
@@ -67,7 +67,7 @@ const Mail = ({ mailId, subject, sender, receiver, sendDate, receiveDate, status
                     </button>
                 </div>
             </td>
-            <th>{factor.id}</th>
+            <th>{mailId}</th>
         </tr>
     );
 };

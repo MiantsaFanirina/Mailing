@@ -15,7 +15,7 @@ const Sidebar = () => {
           <li className={pathname === '/employees' ? 'bg-primary overflow-hidden rounded-lg text-white' : ''}>
               <Link to={"/employees"}>
                   <Users width={15} height={15}/>
-                  <span className="hidden md:block">Mes employers</span>
+                  <span className="hidden md:block">Mes employés</span>
               </Link>
           </li>
 

@@ -140,11 +140,11 @@ const MailPage = () => {
     };
 
     return (
-        <div className="flex flex-col gap-4 w-full h-full">
+        <div className="flex md:p-12 flex-col gap-4 md:gap-12 w-full h-full">
             <div className="flex justify-between items-center">
                 <div>
                     <button className={'btn btn-sm btn-primary'}  onClick={() => document.getElementById("addMailModal").showModal()}>
-                        <MailPlus className={'h-4 w-4'}/> Ajouter du courrier
+                        <MailPlus className={'h-4 w-4'}/> <span className={'hidden md:block'}>Ajouter un courrier</span>
                     </button>
                 </div>
                 <div className="flex gap-2">
